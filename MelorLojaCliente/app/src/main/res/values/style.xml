@@ -48,7 +48,7 @@
     </style>
 
     <style name="DialogTheme" parent="Base.Theme.MaterialComponents.Dialog">
-        <item name="android:textColorHint">@color/dark_grey</item>
+        <item name="android:textColorHint">@color/dark_gray</item>
         <item name="android:textColorPrimary">@color/sub_title</item>
         <item name="android:windowBackground">@android:color/transparent</item>
     </style>

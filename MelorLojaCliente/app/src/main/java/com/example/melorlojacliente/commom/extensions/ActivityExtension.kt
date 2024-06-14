@@ -36,7 +36,7 @@ fun AppCompatActivity.statusBarConfigVersion() {
                     WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS,
                     WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS
                 )
-                window.statusBarColor = ContextCompat.getColor(this, R.color.light_grey)
+                window.statusBarColor = ContextCompat.getColor(this, R.color.light_gray)
             }
         }
     }

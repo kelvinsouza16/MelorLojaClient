@@ -55,7 +55,7 @@
                 app:scv_codeLength="6"
                 app:scv_showCursor="true"
                 app:scv_symbolBorderActiveColor="@color/primary"
-                app:scv_symbolBorderColor="@color/dark_grey"
+                app:scv_symbolBorderColor="@color/dark_gray"
                 app:scv_symbolBorderCornerRadius="8dp"
                 app:scv_symbolHeight="48dp"
                 app:scv_symbolTextColor="@color/black"

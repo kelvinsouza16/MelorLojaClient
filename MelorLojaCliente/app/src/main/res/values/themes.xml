@@ -12,7 +12,7 @@
         <item name="android:windowBackground">@color/bg_color</item>
         <item name="android:navigationBarColor">@color/bg_color</item>
         <item name="android:textAllCaps">false</item>
-        <item name="color_grey_dark">@color/dark_grey</item>
+        <item name="color_grey_dark">@color/dark_gray</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>

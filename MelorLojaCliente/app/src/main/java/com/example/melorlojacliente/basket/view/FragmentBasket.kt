@@ -2,17 +2,21 @@ package com.example.melorlojacliente.basket.view
 
 import android.animation.ValueAnimator
 import android.annotation.SuppressLint
+import android.content.Context
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.melorlojacliente.R
+import com.example.melorlojacliente.basket.BasketAttachListener
 import com.example.melorlojacliente.basket.BasketView
 import com.example.melorlojacliente.basket.presentation.BasketPresenter
 import com.example.melorlojacliente.commom.base.BaseFragment
 import com.example.melorlojacliente.commom.base.DependencyInjector
+import com.example.melorlojacliente.commom.dialogs.ConfirmDialog
 import com.example.melorlojacliente.commom.extensions.getFinanceType
 import com.example.melorlojacliente.commom.models.ProductWithCount
 import com.example.melorlojacliente.commom.utils.Basket
 import com.example.melorlojacliente.databinding.FragmentBasketBinding
+import com.example.melorlojacliente.home.details.ProductDetailsAttachListener
 
 class FragmentBasket : BaseFragment<FragmentBasketBinding, BasketView.Presenter>(
     R.layout.fragment_basket,
@@ -26,6 +30,16 @@ class FragmentBasket : BaseFragment<FragmentBasketBinding, BasketView.Presenter>
 
     private val adapter: BasketAdapter by lazy(LazyThreadSafetyMode.NONE) {
         BasketAdapter()
+    }
+
+    private var basketAttachListener: BasketAttachListener? = null
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+
+        if (context is BasketAttachListener) {
+            basketAttachListener = context
+        }
     }
 
     override fun setupViews() {
@@ -60,6 +74,14 @@ class FragmentBasket : BaseFragment<FragmentBasketBinding, BasketView.Presenter>
                     basketBtnConfirmOrder.isEnabled = news.isNotEmpty()
                     adapter.submitList(news)
                     tvPriceAnimator(news)
+                }
+
+                basketBtnConfirmOrder.setOnClickListener {
+                    val confirmDialog = ConfirmDialog(requireContext(), "Você realmente deseja confirmar o pedido?")
+                    confirmDialog.setConfirmClickListener {
+                        basketAttachListener?.goToFragmentOrderProductsScreen()
+                    }
+                    confirmDialog.show()
                 }
 
             }
