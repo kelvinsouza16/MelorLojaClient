@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "451730450576",
+    "project_id": "melor-loja",
+    "storage_bucket": "melor-loja.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451730450576:android:55b5a27cc77b9b67a41015",
+        "android_client_info": {
+          "package_name": "com.example.melorloja"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIku4xGzWnbvCviYWLUwxGTE75XBVN76c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451730450576:android:23d73334c908cfd1a41015",
+        "android_client_info": {
+          "package_name": "com.example.melorlojacliente"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIku4xGzWnbvCviYWLUwxGTE75XBVN76c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

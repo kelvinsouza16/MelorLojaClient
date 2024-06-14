@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <item name="boxCornerRadiusTopStart">@dimen/margin_std</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/margin_std</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/margin_std</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/margin_std</item>
+
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MaterialCardView.InnerBottom" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/margin_std</item>
+        <item name="cornerSizeTopLeft">@dimen/margin_std</item>
+        <item name="cornerSizeBottomRight">@dimen/margin_std</item>
+        <item name="cornerSizeBottomLeft">@dimen/margin_std</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_language</item>
+    </style>
+
+    <style name="FabShapeStyle" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">@dimen/margin_std</item>
+        <item name="backgroundColor">#fff</item>
+    </style>
+
+    <style name="ShapeImageView">
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="Theme.PandaCrossTraining.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginStart">12sp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_marginBottom">24dp</item>
+        <item name="backgroundTint">@color/button_background</item>
+    </style>
+
+    <style name="DialogTheme" parent="Base.Theme.MaterialComponents.Dialog">
+        <item name="android:textColorHint">@color/dark_grey</item>
+        <item name="android:textColorPrimary">@color/sub_title</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>

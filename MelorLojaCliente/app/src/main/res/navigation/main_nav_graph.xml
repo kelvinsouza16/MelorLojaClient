@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/fragmentHome">
+
+    <fragment
+        android:id="@+id/fragmentHome"
+        tools:layout="@layout/fragment_home"
+        android:name="com.example.melorlojacliente.home.view.FragmentHome"
+        android:label="FragmentHome" />
+    <fragment
+        android:id="@+id/fragmentProfile"
+        tools:layout="@layout/fragment_profile"
+        android:name="com.example.melorlojacliente.profile.view.FragmentProfile"
+        android:label="ProfileScreen" />
+    <fragment
+        android:id="@+id/fragmentOrders"
+        tools:layout="@layout/fragment_orders"
+        android:name="com.example.melorlojacliente.order.view.FragmentOrder"
+        android:label="FragmentOrders" />
+</navigation>

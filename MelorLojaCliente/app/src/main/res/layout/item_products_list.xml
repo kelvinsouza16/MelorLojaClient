@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="8dp"
+    android:background="@drawable/bg_products_list_item"
+    android:orientation="vertical"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="8dp">
+
+    <ImageView
+        android:id="@+id/item_img_product"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:src="@drawable/place"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/item_txt_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_nrl"
+        android:layout_marginTop="16dp"
+        android:ellipsize="marquee"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="Blusa Infantil" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_std"
+        android:layout_marginTop="@dimen/margin_small"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:text="@string/reference"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/item_txt_product_reference"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:text="123456" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_std"
+        android:layout_marginTop="@dimen/margin_small"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:text="@string/size"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/item_txt_product_size"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:text="M" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_std"
+        android:layout_marginTop="@dimen/margin_small"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:text="@string/stock"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/item_txt_product_stock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:text="5" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_txt_product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_nrl"
+        android:padding="@dimen/margin_nrl"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        tools:text="R$ 25,00" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/item_product_btn_add_to_basket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_to_basket_btn"
+        android:fontFamily="@font/sf_pro_semi_bold"
+        android:text="@string/add_to_basket"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+</LinearLayout>
