@@ -4,7 +4,7 @@ plugins {
     id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
     id 'com.google.gms.google-services'
     id "kotlin-parcelize"
-    //id 'dagger.hilt.android.plugin'
+    id 'dagger.hilt.android.plugin'
     id 'kotlin-kapt'
 }
 
@@ -37,6 +37,9 @@ android {
     }
     buildFeatures {
         viewBinding = true
+    }
+    hilt {
+        enableAggregatingTask = true
     }
 }
 
@@ -72,16 +75,25 @@ dependencies {
     //image picker
     implementation 'com.github.Drjacky:ImagePicker:2.1.16'
 
+     */
+
     //hilt
     implementation 'com.google.dagger:hilt-android:2.42'
     kapt 'com.google.dagger:hilt-compiler:2.42'
     implementation "androidx.hilt:hilt-navigation-fragment:1.0.0"
 
+    //fire store
+    implementation 'com.google.android.gms:play-services-location:21.0.0'
+    implementation 'com.google.firebase:firebase-firestore:24.4.0'
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+
+    //timber
+    implementation 'com.jakewharton.timber:timber:5.0.1'
+
+    implementation 'ru.ldralighieri.corbind:corbind:1.5.5'
+
     //map
-    implementation 'com.google.android.gms:play-services-location:21.0.1'
     implementation 'com.google.android.gms:play-services-maps:18.1.0'
-    implementation 'com.google.android.gms:play-services-auth:20.3.0'
-     */
 
     //coroutine
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4"

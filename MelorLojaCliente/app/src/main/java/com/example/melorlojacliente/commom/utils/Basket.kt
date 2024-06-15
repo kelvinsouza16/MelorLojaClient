@@ -3,7 +3,7 @@ package com.example.melorlojacliente.commom.utils
 import androidx.lifecycle.MutableLiveData
 import com.example.melorlojacliente.commom.models.Product
 import com.example.melorlojacliente.commom.models.ProductWithCount
-import com.google.type.LatLng
+import com.google.android.gms.maps.model.LatLng
 
 object Basket {
     var productsListLiveData = MutableLiveData<List<ProductWithCount>>()

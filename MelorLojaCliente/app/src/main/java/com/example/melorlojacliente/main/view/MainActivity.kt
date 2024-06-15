@@ -15,9 +15,11 @@ import com.example.melorlojacliente.home.details.FragmentProductDetails
 import com.example.melorlojacliente.home.details.ProductDetailsAttachListener
 import com.example.melorlojacliente.main.MainAttachListener
 import com.example.melorlojacliente.order.ckeckout.FragmentOrderProducts
+import com.example.melorlojacliente.order.ckeckout.map.FragmentOrderMap
+import com.example.melorlojacliente.order.ckeckout.map.MapAttachListener
 
 class MainActivity : AppCompatActivity(), MainAttachListener, HomeAttachListener,
-    ProductDetailsAttachListener, BasketAttachListener {
+    ProductDetailsAttachListener, BasketAttachListener, MapAttachListener {
 
     private lateinit var binding: ActivityMainBinding
 
@@ -57,6 +59,11 @@ class MainActivity : AppCompatActivity(), MainAttachListener, HomeAttachListener
 
     override fun goToFragmentOrderProductsScreen() {
         val fragment = FragmentOrderProducts()
+        replaceFragment(R.id.main_fragment, fragment)
+    }
+
+    override fun goToMapScreen() {
+        val fragment = FragmentOrderMap()
         replaceFragment(R.id.main_fragment, fragment)
     }
 }

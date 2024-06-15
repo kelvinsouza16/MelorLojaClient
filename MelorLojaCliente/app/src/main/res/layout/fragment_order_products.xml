@@ -78,7 +78,7 @@
                     tools:ignore="UseCompoundDrawables">
 
                     <TextView
-                        android:id="@+id/order_products_txt_on_the_way"
+                        android:id="@+id/order_products_txt_pick_up_in_store"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -86,14 +86,14 @@
                         android:fontFamily="@font/sf_pro_semi_bold"
                         android:gravity="center_vertical"
                         android:padding="8dp"
-                        android:text="@string/on_the_way"
+                        android:text="@string/pick_up_in_store"
                         android:textColor="@color/black"
                         android:textSize="15sp"
                         android:textStyle="bold"
-                        app:drawableStartCompat="@drawable/ic_on_way" />
+                        app:drawableStartCompat="@drawable/ic_pick_up_in_store" />
 
                     <ImageView
-                        android:id="@+id/order_products_img_check_on_the_way"
+                        android:id="@+id/order_products_img_check_pick_up_in_store"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/ic_check"

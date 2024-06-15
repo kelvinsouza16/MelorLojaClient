@@ -42,10 +42,16 @@
     <string name="order_value">Valor do pedido</string>
     <string name="description">Descrição</string>
     <string name="delivery_method">Método de Entrega</string>
-    <string name="on_the_way">A caminho</string>
+    <string name="pick_up_in_store">Retirar na loja</string>
     <string name="delivery">Entrega</string>
     <string name="delivery_address">Endereço de entrega</string>
     <string name="observation">Observação</string>
     <string name="add_observation">Adicionar observação</string>
     <string name="products">Produtos</string>
+    <string name="itaperuna">Itaperuna</string>
+    <string name="enable_location">Habilitar localização</string>
+    <string name="enable_location_message">O GPS está desativado.\\nAtive a geolocalização</string>
+    <string name="location_settings">Ligar</string>
+    <string name="permission_approved_explanation">Você aprovou o layout FINE, continue (e clique) mais!</string>
+    <string name="fine_permission_denied_explanation">A permissão para determinar a localização exata foi negada, mas é necessária para funções essenciais.</string>
 </resources>
